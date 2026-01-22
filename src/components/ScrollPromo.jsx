@@ -25,17 +25,12 @@ export default function ScrollPromo() {
   return (
     <section
       id="scrollSection"
-      className="relative h-[60vh] overflow-hidden"
+      className="relative h-[60vh] overflow-hidden bg-center bg-cover bg-fixed"
+      style={{
+        backgroundImage:
+          "url('https://img.freepik.com/premium-photo/portrait-woman-traditional-clothing_1048944-5339999.jpg?ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80')",
+      }}
     >
-      {/* Fixed Background */}
-      <div
-        className="fixed inset-0 bg-center bg-cover -z-10"
-        style={{
-          backgroundImage:
-            "url('https://img.freepik.com/premium-photo/portrait-woman-traditional-clothing_1048944-5339999.jpg?ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80')",
-        }}
-      ></div>
-
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/40"></div>
 

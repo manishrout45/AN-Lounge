@@ -69,7 +69,7 @@ export default function ContactUsSection() {
                 </div>
 
                 {/* BUTTON */}
-                <button className="mt-6 bg-black text-white px-10 py-3 rounded-full hover:bg-black/90 transition">
+                <button className="mt-6 bg-[#1f1a18] text-white px-10 py-3 rounded-full hover:bg-black/90 transition">
                   Contact Us
                 </button>
               </div>

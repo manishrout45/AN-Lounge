@@ -17,7 +17,7 @@ export default function AboutSection() {
         </div>
 
         {/* RIGHT CONTENT */}
-        <div className="relative text-[#2b3316]">
+        <div className="relative text-[#1f1a18]">
 
           {/* CIRCULAR ROTATING BADGE */}
 <div className="mb-10 flex justify-start">
@@ -49,8 +49,8 @@ export default function AboutSection() {
     </div>
 
     {/* CENTER LOGO */}
-<div className="w-14 h-14 rounded-full border border-[#2b3316]/40 
-                flex items-center justify-center bg-[#2b3316] z-10 overflow-hidden">
+<div className="w-14 h-14 rounded-full border border-[#1f1a18]/40 
+                flex items-center justify-center bg-[#1f1a18] z-10 overflow-hidden">
   <img
     src="/assets/images/AN_LOGO_png.png"   // 🔁 replace with your logo image path
     alt="Salon Logo"
@@ -64,7 +64,7 @@ export default function AboutSection() {
 
 
           {/* SCRIPT TITLE */}
-          <p className="italic text-xl mb-2 text-[#6b6b4f]">
+          <p className="italic text-xl mb-2 text-[#1f1a18]">
             ABOUT US
           </p>
 
@@ -74,7 +74,7 @@ export default function AboutSection() {
           </h2>
 
           {/* DESCRIPTION */}
-          <p className="max-w-xl leading-relaxed mb-10 text-[#2b3316]/80">
+          <p className="max-w-xl leading-relaxed mb-10 text-[#1f1a18]/80">
             At AN Lounge, we celebrate beauty for everyone. Our talented team
             offers personalized haircuts, coloring, and styling services for
             both men and women, ensuring every client leaves feeling confident
@@ -87,19 +87,19 @@ export default function AboutSection() {
             {/* BUTTON */}
             <a
               href="#"
-              className="border border-[#2b3316] px-8 py-3 text-sm uppercase tracking-widest hover:bg-[#2b3316] hover:text-white transition-all duration-500"
+              className="border border-[#1f1a18] px-8 py-3 text-sm uppercase tracking-widest hover:bg-[#2b3316] hover:text-white transition-all duration-500"
             >
               More About Us
             </a>
 
             {/* PHONE */}
             <div className="flex items-center gap-3 text-sm tracking-wider">
-              <div className="w-10 h-10 border border-[#2b3316]/40 flex items-center justify-center">
-                <FaMobileAlt className="text-[#2b3316]" />
+              <div className="w-10 h-10 border border-[#1f1a18]/40 flex items-center justify-center">
+                <FaMobileAlt className="text-[#1f1a18]" />
               </div>
               <span>
                 PHONE NUMBER <br />
-                <span className="text-[#2b3316]/80">+111 222 333</span>
+                <span className="text-[#1f1a18]/80">+111 222 333</span>
               </span>
             </div>
 

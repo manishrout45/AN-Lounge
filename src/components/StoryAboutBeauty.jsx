@@ -12,7 +12,7 @@ export default function StoryAboutBeauty() {
           </h2>
 
           {/* Small underline */}
-          <div className="w-10 h-[2px] bg-[#e6b566] mx-auto lg:mx-0"></div>
+          <div className="w-10 h-[2px] bg-[#1f1a18] mx-auto lg:mx-0"></div>
 
           <p className="text-sm text-gray-500 leading-relaxed max-w-xl mx-auto lg:mx-0">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -26,7 +26,7 @@ export default function StoryAboutBeauty() {
             aliquip ex ea commodo consequat.
           </p>
 
-          <button className="mt-4 inline-block bg-[#e6b566] text-white text-sm tracking-wider px-8 py-3 hover:bg-[#d9a64d] transition relative z-10">
+          <button className="mt-4 inline-block bg-[#1f1a18] text-white text-sm tracking-wider px-8 py-3 hover:bg-[#d9a64d] transition relative z-10">
             READ MORE
           </button>
 
