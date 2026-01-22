@@ -83,7 +83,7 @@ export default function HeroSection() {
       </div>
 
       {/* HERO CONTENT */}
-      <div className="relative z-20 min-h-screen flex items-center justify-center text-center px-4 sm:px-6">
+      <div className="relative z-20 flex items-center justify-center text-center px-4 sm:px-6">
         <div className="max-w-3xl md:max-w-4xl">
 
           <motion.h1
