@@ -1,0 +1,259 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Quicksand", sans-serif;
+}
+
+  /* Hide scrollbar for Chrome, Safari, Edge */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for Firefox */
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+
+
+
+.animate-bgBounce {
+  animation: bgBounce 10s ease-in-out infinite;
+}
+
+
+/* Initial states */
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+.fade-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: all 0.8s ease-out;
+}
+
+.fade-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: all 0.8s ease-out;
+}
+
+.zoom-in {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.8s ease-out;
+}
+
+/* When in view */
+.fade-up.in-view,
+.fade-left.in-view,
+.fade-right.in-view,
+.zoom-in.in-view {
+  opacity: 1;
+  transform: translateX(0) translateY(0) scale(1);
+}
+.mask-btn {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  outline: none;
+}
+
+.mask-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #ffffff; /* color of shine/scratched effect */
+  opacity: 0.2;        /* lower opacity = softer effect */
+
+  /* MASK SPRITE */
+  -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+  mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+
+  -webkit-mask-size: 2300% 100%;
+  mask-size: 2300% 100%;
+
+  /* Start hidden */
+  -webkit-mask-position: 0 0;
+  mask-position: 0 0;
+
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+/* Hover Animation */
+.mask-btn:hover::before {
+  animation: mask-forward 0.7s steps(22) forwards;
+  opacity: 1;
+}
+
+/* Reverse when mouse leaves */
+.mask-btn:not(:hover)::before {
+  animation: mask-reverse 0.7s steps(22) forwards;
+}
+
+/* Keyframes */
+@keyframes mask-forward {
+  from { mask-position: 0 0; -webkit-mask-position: 0 0; }
+  to   { mask-position: 100% 0; -webkit-mask-position: 100% 0; }
+}
+
+@keyframes mask-reverse {
+  from { mask-position: 100% 0; -webkit-mask-position: 100% 0; }
+  to   { mask-position: 0 0; -webkit-mask-position: 0 0; }
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+
+/* ----------- FADE-UP PARAGRAPH ANIMATION ----------- */
+.fade-up {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Fade-Right (new)               */
+/* ------------------------------ */
+.fade-right {
+  opacity: 0;
+  transform: translateX(-50px); /* start from left */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* ----------- ACTIVE CLASS (added automatically in React) ----------- */
+.show {
+  opacity: 1 !important;
+  transform: translate(0) !important;
+}
+/* Hide default cursor */
+body {
+  cursor: none;
+}
+
+/* Main golden orb cursor */
+.cursor-main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background: radial-gradient(circle at 30% 30%, #bfae8f, #8c7659);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99999;
+  box-shadow: 0 0 12px rgba(191, 174, 143, 0.8);
+  transition: transform 0.05s ease, box-shadow 0.2s ease;
+}
+
+/* Click pulse effect */
+.cursor-main.cursor-click {
+  transform: scale(2);
+  box-shadow: 0 0 20px rgba(191, 174, 143, 1), 0 0 40px rgba(191, 174, 143, 0.5);
+}
+
+
+
+/* ===============================
+   GLOBAL SLIDE BUTTON ANIMATION
+================================ */
+
+.btn-slide {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* SLIDING LIGHT STRIP */
+.btn-slide::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -120%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.5),
+    transparent
+  );
+  transform: rotate(25deg);
+  transition: left 0.7s ease;
+}
+
+/* HOVER ANIMATION */
+.btn-slide:hover::before {
+  left: 120%;
+}
+
+/* LIFT EFFECT */
+.btn-slide:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+}
+
+/* CLICK FEEDBACK */
+.btn-slide:active {
+  transform: scale(0.95);
+}
+
+
+.btn-slide.attention {
+  animation: pulseGlow 2.5s infinite;
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 0 rgba(19, 37, 115, 0.0);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(19, 37, 115, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 0 rgba(19, 37, 115, 0.0);
+  }
+}
+
+
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 18s linear infinite;
+}
