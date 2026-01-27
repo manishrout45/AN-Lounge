@@ -1,34 +1,33 @@
 export default function ServiceSection() {
   const services = [
-  {
-    title: "BRIDAL MAKEUP",
-    img: "https://img.freepik.com/premium-photo/image-makeup-artist-doing-bridal-woman-elegant-makeup_1021867-35657.jpg?ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
-  },
-  {
-    title: "HAIR STYLING",
-    img: "https://img.freepik.com/premium-photo/hairdresser-with-scissors-cuts-woman-s-hair-hairdressing-salon-stylist-client-hairsalon-beauty-business-professional-service_266732-18626.jpg?ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
-  },
-  {
-    title: "FACIAL & SKINCARE",
-    img: "https://img.freepik.com/premium-photo/woman-cosmetologist-making-beauty-procedures_926199-2585419.jpg?ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
-  },
-  {
-    title: "GROOMING FOR MEN",
-    img: "https://img.freepik.com/premium-photo/side-view-young-man-holding-hands_114963-23731.jpg?ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
-  },
-  {
-    title: "HAIR COLORING",
-    img: "https://img.freepik.com/free-photo/blonde-girl-getting-her-hair-done_23-2148108856.jpg?ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
-  },
-  {
-    title: "NAIL ART",
-    img: "https://img.freepik.com/premium-photo/free-photo-closeup-beautiful-nail-art-with-flowers_1121794-143.jpg?ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
-  },
-];
-
+    {
+      title: "BRIDAL MAKEUP",
+      img: "https://img.freepik.com/premium-photo/image-makeup-artist-doing-bridal-woman-elegant-makeup_1021867-35657.jpg?ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
+    },
+    {
+      title: "HAIR STYLING",
+      img: "https://img.freepik.com/premium-photo/hairdresser-with-scissors-cuts-woman-s-hair-hairdressing-salon-stylist-client-hairsalon-beauty-business-professional-service_266732-18626.jpg?ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
+    },
+    {
+      title: "FACIAL & SKINCARE",
+      img: "https://img.freepik.com/premium-photo/woman-cosmetologist-making-beauty-procedures_926199-2585419.jpg?ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
+    },
+    {
+      title: "GROOMING FOR MEN",
+      img: "https://img.freepik.com/premium-photo/side-view-young-man-holding-hands_114963-23731.jpg?ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
+    },
+    {
+      title: "HAIR COLORING",
+      img: "https://img.freepik.com/free-photo/blonde-girl-getting-her-hair-done_23-2148108856.jpg?ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
+    },
+    {
+      title: "NAIL ART",
+      img: "https://img.freepik.com/premium-photo/free-photo-closeup-beautiful-nail-art-with-flowers_1121794-143.jpg?ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
+    },
+  ];
 
   return (
-    <section className="w-full bg-white py-24">
+    <section className="w-full bg-white py-24 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 flex flex-col gap-20">
 
         {/* TOP CONTENT */}
@@ -56,7 +55,7 @@ export default function ServiceSection() {
             </a>
           </div>
 
-          <div className="flex justify-center lg:justify-end">
+          <div className="flex justify-center lg:justify-end overflow-hidden">
             <img
               src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=900&q=80"
               alt="Bridal Makeup"
@@ -68,16 +67,15 @@ export default function ServiceSection() {
         {/* SERVICES GALLERY */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {services.map((service, index) => (
-            <div
-              key={index}
-              className="relative group h-72 overflow-hidden rounded-xl"
-            >
+            <div key={index} className="relative group h-[260px] overflow-hidden rounded-xl">
+
               {/* IMAGE */}
               <img
                 src={service.img}
                 alt={service.title}
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-700"
               />
+
 
               {/* SLIDE UP OVERLAY */}
               <div
@@ -90,7 +88,7 @@ export default function ServiceSection() {
                   transition-transform duration-500 ease-out
                 "
               >
-                <h3 className="font-raleway text-white text-xl font-extrabold tracking-wide mb-6">
+                <h3 className="font-raleway text-white text-xl font-extrabold tracking-wide mb-6 text-center px-2">
                   {service.title}
                 </h3>
               </div>
@@ -104,13 +102,14 @@ export default function ServiceSection() {
             <img
               src="/assets/images/hairBrush.png"
               alt="Hair Brush"
-              className="w-84 object-contain"
+              className="w-full max-w-[280px] h-auto object-contain"
             />
             <img
               src="/assets/images/comb.png"
               alt="Comb"
-              className="w-84 object-contain"
+              className="w-full max-w-[280px] h-auto object-contain"
             />
+
           </div>
 
           <div className="space-y-5">
@@ -128,7 +127,6 @@ export default function ServiceSection() {
               welcoming environment to ensure every visit is a refreshing and
               confidence-boosting experience.
             </p>
-
 
             <a
               href="#"

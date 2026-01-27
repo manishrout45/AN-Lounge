@@ -34,9 +34,9 @@ export default function StoryAboutBeauty() {
           {/* DECORATIVE COMB IMAGE */}
           <img
             src="/assets/images/comb02.png"
-            alt="Comb Decoration"
-            className="hidden lg:block absolute -bottom-44  w-72 opacity-20 pointer-events-none"
+            className="absolute bottom-0 translate-y-20 w-72 opacity-20 pointer-events-none"
           />
+
         </div>
 
         {/* RIGHT IMAGE */}
@@ -44,8 +44,9 @@ export default function StoryAboutBeauty() {
           <img
             src="/assets/images/Scissor&Hair.png"
             alt="Hair & Scissors"
-            className="-mt-32 w-full max-w-lg object-contain"
+            className="w-full max-w-lg object-contain lg:-mt-20"
           />
+
         </div>
 
       </div>

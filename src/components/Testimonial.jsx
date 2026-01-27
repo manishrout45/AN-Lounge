@@ -57,7 +57,7 @@ export default function Testimonial() {
         {/* LEFT IMAGE WITH ANIMATION */}
         <div className="flex justify-center lg:justify-end">
           <div
-            className={`w-full max-w-[380px] sm:max-w-[420px] h-[420px] sm:h-[500px] lg:h-[560px] overflow-hidden transition-all duration-700 ease-in-out
+            className={`w-full max-w-[380px] sm:max-w-[420px] h-[320px] sm:h-[420px] lg:h-[500px] overflow-hidden transition-all duration-700 ease-in-out
               ${animateImage ? "opacity-100 scale-100 translate-x-0" : "opacity-0 scale-95 translate-x-8"}
             `}
             style={{
