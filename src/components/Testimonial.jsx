@@ -9,7 +9,7 @@ const testimonialData = [
     role: "Customer",
     rating: 5,
     image:
-      "https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=600&q=80",
+      "https://cdn.shopify.com/s/files/1/0591/6422/9806/files/Curtain_Bangs_with_Medium_Hair.jpg?v=1763448829",
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const testimonialData = [
     role: "Customer",
     rating: 5,
     image:
-      "https://images.unsplash.com/photo-1595152772835-219674b2a8a5?auto=format&fit=crop&w=600&q=80",
+      "https://img.freepik.com/free-photo/close-up-portrait-young-bearded-man-white-shirt-jacket-posing-camera-with-broad-smile-isolated-gray_171337-629.jpg?ga=GA1.1.1312737827.1743758138&w=740&q=80",
   },
   {
     id: 3,
@@ -27,12 +27,13 @@ const testimonialData = [
     role: "Customer",
     rating: 5,
     image:
-      "https://images.unsplash.com/photo-1614288367334-9c29d66b4fa0?auto=format&fit=crop&w=600&q=80",
+      "https://images.lifestyleasia.com/wp-content/uploads/sites/7/2020/07/17125604/96259876_133986691545335_4374797284558014068_n-645x806.jpg",
   },
 ];
 
 export default function Testimonial() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [animateImage, setAnimateImage] = useState(true);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -42,14 +43,23 @@ export default function Testimonial() {
     return () => clearInterval(interval);
   }, []);
 
+  // Image animation trigger
+  useEffect(() => {
+    setAnimateImage(false);
+    const timeout = setTimeout(() => setAnimateImage(true), 200);
+    return () => clearTimeout(timeout);
+  }, [currentIndex]);
+
   return (
     <section className="w-full bg-[#daceba] py-16 sm:py-20 lg:py-24 flex justify-center">
       <div className="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 items-center gap-12 lg:gap-20 px-4 sm:px-6">
 
-        {/* LEFT IMAGE */}
+        {/* LEFT IMAGE WITH ANIMATION */}
         <div className="flex justify-center lg:justify-end">
           <div
-            className="w-full max-w-[380px] sm:max-w-[420px] h-[420px] sm:h-[500px] lg:h-[560px] overflow-hidden"
+            className={`w-full max-w-[380px] sm:max-w-[420px] h-[420px] sm:h-[500px] lg:h-[560px] overflow-hidden transition-all duration-700 ease-in-out
+              ${animateImage ? "opacity-100 scale-100 translate-x-0" : "opacity-0 scale-95 translate-x-8"}
+            `}
             style={{
               borderTopLeftRadius: "220px",
               borderTopRightRadius: "220px",
@@ -60,7 +70,7 @@ export default function Testimonial() {
             <img
               src={testimonialData[currentIndex].image}
               alt={testimonialData[currentIndex].name}
-              className="w-full h-full object-cover transition-all duration-700"
+              className="w-full h-full object-cover"
             />
           </div>
         </div>
@@ -68,12 +78,10 @@ export default function Testimonial() {
         {/* RIGHT CONTENT */}
         <div className="max-w-xl sm:max-w-2xl space-y-4 sm:space-y-6 text-[#2b3316]">
 
-          {/* SCRIPT TEXT */}
           <p className="italic text-sm sm:text-base tracking-wide text-[#5a5f3a]">
             Customers
           </p>
 
-          {/* TITLE */}
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-raleway font-bold uppercase tracking-wide">
             Lovely Customers
           </h2>
@@ -95,7 +103,6 @@ export default function Testimonial() {
             )}
           </div>
 
-          {/* TEXT */}
           <p className="leading-relaxed text-sm sm:text-base md:text-lg text-[#3d4028]">
             {testimonialData[currentIndex].text}
           </p>

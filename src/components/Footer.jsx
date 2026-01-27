@@ -28,7 +28,7 @@ export default function Footer() {
             </h2>
           </div>
 
-          <p className="text-sm leading-relaxed max-w-xs">
+          <p className="text-sm leading-relaxed max-w-xs text-white">
             Beautiful hair can have a positive impact on your appearance.
           </p>
 
@@ -40,7 +40,7 @@ export default function Footer() {
           <h3 className="text-lg font-semibold mb-5 text-[#e0d3b2]">
             Support
           </h3>
-          <ul className="space-y-3 text-sm">
+          <ul className="space-y-3 text-sm text-white">
             <li>Contact Us</li>
             <li>About Us</li>
             <li>Careers</li>
@@ -54,7 +54,7 @@ export default function Footer() {
           <h3 className="text-lg font-semibold mb-5 text-[#e0d3b2]">
             Information
           </h3>
-          <ul className="space-y-3 text-sm">
+          <ul className="space-y-3 text-sm text-white">
             <li>Search Terms</li>
             <li>Advanced Search</li>
             <li>Help & FAQ's</li>
@@ -70,27 +70,21 @@ export default function Footer() {
           </h3>
 
           <ul className="space-y-4 text-sm">
-            <li className="flex items-start gap-3">
+            <li className="flex items-start gap-3 text-white">
               <FaMapMarkerAlt className="mt-1 text-[#bfae8f]" />
               <span>
-                Block 93, Flat 5 Moro Road,<br />
-                Kubwa Abuja.
+                1st Floor, near magnum wine shop,<br /> Block N5, IRC Village, Nayapalli,<br /> Bhubaneswar, Odisha 751015
               </span>
             </li>
 
-            <li className="flex items-center gap-3">
+            <li className="flex items-center gap-3 text-white">
               <FaPhoneAlt className="text-[#bfae8f]" />
-              +234 8149709555
+              +91 82491 25231
             </li>
 
-            <li className="flex items-center gap-3">
+            <li className="flex items-center gap-3 text-white">
               <FaEnvelope className="text-[#bfae8f]" />
               doppletech8@gmail.com
-            </li>
-
-            <li className="flex items-center gap-3">
-              <FaGlobe className="text-[#bfae8f]" />
-              www.fiverr.com/users/doppletech
             </li>
           </ul>
         </div>
@@ -98,7 +92,7 @@ export default function Footer() {
 
       {/* BOTTOM BAR */}
       <div className="border-t border-[#3a342f] py-4 text-center text-xs text-[#a89a7b]">
-        © {new Date().getFullYear()} Tomilayo Hair Weaves. All rights reserved.
+        © {new Date().getFullYear()} AN Lounge. All rights reserved.
       </div>
     </footer>
   );

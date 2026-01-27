@@ -14,6 +14,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import GlobalCursor from "./components/GlobalCursor";
+import VerticalContact from "./components/VerticalContact";
 
 function App() {
   useEffect(() => {
@@ -25,9 +26,11 @@ function App() {
       <ScrollToTop /> {/* Ensures page scroll resets on route change */}
       <Navbar />
       <GlobalCursor />
+      <VerticalContact />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
+
       </Routes>
 
       <Footer />

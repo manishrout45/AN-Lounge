@@ -15,7 +15,7 @@ export default function ContactUsSection() {
           <div className="flex justify-center -mt-20">
             <div className="w-full max-w-md">
               <img
-                src="https://i.pinimg.com/474x/85/18/37/85183754111d776d39494f31fa996ca0.jpg"
+                src="/assets/images/contactImg.png"
                 alt="Fashion Models"
                 className="w-full h-auto object-cover"
               />
@@ -79,14 +79,13 @@ export default function ContactUsSection() {
 
                 <div>
                   <p className="font-medium">Contact</p>
-                  <p className="text-black/70 mt-1">hi@fashion.com</p>
+                  <p className="text-black/70 mt-1">anlounge@gmail.com</p>
                 </div>
 
                 <div>
                   <p className="font-medium">Based in</p>
                   <p className="text-black/70 mt-1">
-                    San Francisco,<br />
-                    California
+                    1st Floor, near magnum wine shop, Block N5,<br /> IRC Village, Nayapalli, Bhubaneswar, Odisha 751015
                   </p>
                 </div>
 

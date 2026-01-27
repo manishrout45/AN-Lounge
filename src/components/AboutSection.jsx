@@ -6,7 +6,7 @@ export default function AboutSection() {
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
 
         {/* LEFT IMAGE */}
-        <div className="relative flex justify-center lg:justify-start">
+        <div className="fade-right relative flex justify-center">
           <div className="w-[420px] h-[520px] rounded-[260px] overflow-hidden">
             <img
               src="https://i.pinimg.com/474x/3c/02/21/3c022134e0df3b922571ac8f5f2081f5.jpg"
@@ -69,12 +69,12 @@ export default function AboutSection() {
           </p>
 
           {/* MAIN TITLE */}
-          <h2 className="text-4xl lg:text-5xl font-raleway font-bold leading-tight uppercase tracking-wide mb-6">
+          <h2 className="fade-left text-4xl lg:text-5xl font-raleway font-bold leading-tight uppercase tracking-wide mb-6">
             Welcome to <br /> AN Lounge <br /> Unisex Salon
           </h2>
 
           {/* DESCRIPTION */}
-          <p className="max-w-xl leading-relaxed mb-10 text-[#1f1a18]/80">
+          <p className="fade-up max-w-xl leading-relaxed mb-10 text-[#1f1a18]/80">
             At AN Lounge, we celebrate beauty for everyone. Our talented team
             offers personalized haircuts, coloring, and styling services for
             both men and women, ensuring every client leaves feeling confident
@@ -87,7 +87,7 @@ export default function AboutSection() {
             {/* BUTTON */}
             <a
               href="#"
-              className="border border-[#1f1a18] px-8 py-3 text-sm uppercase tracking-widest hover:bg-[#2b3316] hover:text-white transition-all duration-500"
+              className="border border-[#1f1a18] px-8 py-3 text-sm uppercase tracking-widest hover:bg-[#1f1a18] hover:text-white transition-all duration-500"
             >
               More About Us
             </a>
@@ -99,7 +99,7 @@ export default function AboutSection() {
               </div>
               <span>
                 PHONE NUMBER <br />
-                <span className="text-[#1f1a18]/80">+111 222 333</span>
+                <span className="text-[#1f1a18]/80">+91 82491 25231</span>
               </span>
             </div>
 

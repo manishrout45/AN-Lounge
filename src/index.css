@@ -17,6 +17,19 @@ h1, h2, h3, h4, h5, h6 {
     scrollbar-width: none;
   }
 
+  @keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+.blink {
+  animation: blink 1.2s infinite;
+}
+
 
 
 .animate-bgBounce {
@@ -367,3 +380,7 @@ body {
 .dot.active {
   background: #fff;
 }
+
+
+
+

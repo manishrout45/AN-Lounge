@@ -21,8 +21,8 @@ export default function ServiceSection() {
     img: "https://img.freepik.com/free-photo/blonde-girl-getting-her-hair-done_23-2148108856.jpg?ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
   },
   {
-    title: "PARTY MAKEUP",
-    img: "https://img.freepik.com/free-photo/two-girls-are-doing-make-up-front-big-mirror_231208-3556.jpg?ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
+    title: "NAIL ART",
+    img: "https://img.freepik.com/premium-photo/free-photo-closeup-beautiful-nail-art-with-flowers_1121794-143.jpg?ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
   },
 ];
 
@@ -34,10 +34,10 @@ export default function ServiceSection() {
         {/* TOP CONTENT */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-5">
-            <h2 className="text-3xl lg:text-4xl font-raleway font-semibold text-gray-800">
-              Unisex Salon & Bridal Makeup Studio
+            <h2 className="fade-left text-3xl lg:text-4xl font-raleway font-semibold text-gray-800">
+              Unisex Salon  Bridal Makeup & Nail Art Studio
             </h2>
-            <p className="font-lato text-gray-500 leading-relaxed">
+            <p className="fade-up font-lato text-gray-500 leading-relaxed">
               Experience premium unisex salon services and flawless bridal
               makeup crafted by professional artists. From elegant hairstyles
               to radiant makeup looks, we bring beauty to perfection.
@@ -114,10 +114,10 @@ export default function ServiceSection() {
           </div>
 
           <div className="space-y-5">
-            <h2 className="text-3xl lg:text-4xl font-raleway font-semibold text-gray-800">
+            <h2 className="fade-right text-3xl lg:text-4xl font-raleway font-semibold text-gray-800">
               Beauty, Style & Confidence
             </h2>
-            <p className="font-lato text-gray-500 leading-relaxed">
+            <p className="fade-up font-lato text-gray-500 leading-relaxed">
               Our unisex salon offers personalized grooming, luxury hair care,
               and professional bridal makeup services designed to make every
               client feel confident and beautiful. From precision haircuts,

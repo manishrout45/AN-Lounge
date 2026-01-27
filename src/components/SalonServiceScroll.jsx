@@ -14,6 +14,8 @@ export default function SalonServiceScroll() {
   const sectionRef = useRef(null);
   const [startScroll, setStartScroll] = useState(false);
 
+  const duplicatedServices = [...services, ...services]; // ✅ duplicate list
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => entry.isIntersecting && setStartScroll(true),
@@ -33,12 +35,10 @@ export default function SalonServiceScroll() {
     const scroll = () => {
       if (!container) return;
 
-      container.scrollLeft += 0.5;
+      container.scrollLeft += 0.6; // speed
 
-      if (
-        container.scrollLeft >=
-        container.scrollWidth - container.clientWidth
-      ) {
+      // ✅ seamless infinite scroll
+      if (container.scrollLeft >= container.scrollWidth / 2) {
         container.scrollLeft = 0;
       }
 
@@ -57,9 +57,9 @@ export default function SalonServiceScroll() {
     >
       <div
         ref={containerRef}
-        className="flex items-center gap-6 py-6 overflow-x-hidden px-4 md:px-10"
+        className="flex items-center gap-6 py-6 overflow-x-hidden px-4 md:px-10 whitespace-nowrap"
       >
-        {services.map((item, index) => (
+        {duplicatedServices.map((item, index) => (
           <div
             key={index}
             className="flex-shrink-0 flex items-center justify-center

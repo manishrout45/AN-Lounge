@@ -7,27 +7,28 @@ export default function StoryAboutBeauty() {
         
         {/* LEFT CONTENT */}
         <div className="relative text-center lg:text-left space-y-6">
-          <h2 className="text-3xl md:text-4xl font-raleway font-bold text-gray-900">
-            Story About Beauty
+          <h2 className="fade-right text-3xl md:text-4xl font-raleway font-bold text-gray-900">
+            Story of Style & Beauty
           </h2>
 
           {/* Small underline */}
           <div className="w-10 h-[2px] bg-[#1f1a18] mx-auto lg:mx-0"></div>
 
-          <p className="text-sm text-gray-500 leading-relaxed max-w-xl mx-auto lg:mx-0">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam.
+          <p className="fade-up text-sm text-gray-500 leading-relaxed max-w-xl mx-auto lg:mx-0">
+            AN Lounge is a premium unisex salon where style meets elegance. We
+            believe beauty is not just about looks, but about confidence and
+            personality.
           </p>
 
-          <p className="text-sm text-gray-400 leading-relaxed max-w-xl mx-auto lg:mx-0">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+          <p className="fade-up text-sm text-gray-400 leading-relaxed max-w-xl mx-auto lg:mx-0">
+            From professional hair styling and grooming to stunning bridal
+            makeup and creative nail art, our expert artists deliver
+            personalized services to make every client feel special, stylish,
+            and beautiful.
           </p>
 
           <button className="mt-4 inline-block bg-[#1f1a18] text-white text-sm tracking-wider px-8 py-3 hover:bg-[#d9a64d] transition relative z-10">
-            READ MORE
+            EXPLORE SERVICES
           </button>
 
           {/* DECORATIVE COMB IMAGE */}
