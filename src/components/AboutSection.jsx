@@ -9,7 +9,7 @@ export default function AboutSection() {
         <div className="fade-right relative flex justify-center">
           <div className="w-[260px] sm:w-[320px] md:w-[360px] lg:w-[420px]
                           h-[340px] sm:h-[420px] md:h-[460px] lg:h-[520px]
-                          rounded-[260px] overflow-hidden">
+                          rounded-[260px] overflow-hidden mt-28">
             <img
               src="https://i.pinimg.com/474x/3c/02/21/3c022134e0df3b922571ac8f5f2081f5.jpg"
               alt="AN Lounge Salon"
@@ -25,7 +25,6 @@ export default function AboutSection() {
           <div className="mb-10 flex justify-start">
             <div className="relative w-28 h-28 flex items-center justify-center overflow-hidden">
 
-              {/* ROTATING TEXT */}
               <div className="absolute inset-0 rounded-full animate-spin-slow">
                 <svg viewBox="0 0 100 100" className="w-full h-full">
                   <defs>
@@ -45,7 +44,6 @@ export default function AboutSection() {
                 </svg>
               </div>
 
-              {/* CENTER LOGO */}
               <div className="w-14 h-14 rounded-full border border-[#1f1a18]/40 
                               flex items-center justify-center bg-[#1f1a18] z-10 overflow-hidden">
                 <img
@@ -54,7 +52,6 @@ export default function AboutSection() {
                   className="w-10 h-10 object-contain"
                 />
               </div>
-
             </div>
           </div>
 
@@ -64,15 +61,27 @@ export default function AboutSection() {
             Welcome to <br /> AN Lounge <br /> Unisex Salon
           </h2>
 
-          <p className="fade-up max-w-xl leading-relaxed mb-10 text-[#1f1a18]/80">
-            At AN Lounge, we celebrate beauty for everyone. Our talented team
-            offers personalized haircuts, coloring, and styling services for
-            both men and women, ensuring every client leaves feeling confident
-            and refreshed.
+          {/* UPDATED MAIN CONTENT */}
+          <p className="fade-up max-w-xl leading-relaxed mb-6 text-[#1f1a18]/80">
+            Since 2022, AN Lounge Unisex Salon has been a leading name in beauty and hair care
+            services in Bhubaneswar, Odisha. From hair care and styling to face care and nail care,
+            and from makeup to beard grooming, we have a team of professional beauticians, hair
+            specialists, and men's grooming experts.
           </p>
 
-          <div className="flex flex-wrap items-center gap-6">
+          <p className="fade-up max-w-xl leading-relaxed mb-6 text-[#1f1a18]/80">
+            Whether you are looking for a relaxing head massage, a simple haircut, or a complete makeover,
+            we are ready to offer you:
+          </p>
 
+          {/* SERVICES LIST */}
+          <ul className="mb-10 space-y-2 text-[#1f1a18]/90 font-medium">
+            <li>• Expert Makeup Solutions</li>
+            <li>• Professional Hair and Nail Care</li>
+            <li>• Exceptional Customer Services</li>
+          </ul>
+
+          <div className="flex flex-wrap items-center gap-6">
             <a
               href="#"
               className="border border-[#1f1a18] px-8 py-3 text-sm uppercase tracking-widest hover:bg-[#1f1a18] hover:text-white transition-all duration-500"
@@ -89,7 +98,6 @@ export default function AboutSection() {
                 <span className="text-[#1f1a18]/80">+91 82491 25231</span>
               </span>
             </div>
-
           </div>
         </div>
       </div>

@@ -34,17 +34,13 @@ export default function ServiceSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-5">
             <h2 className="fade-left text-3xl lg:text-4xl font-raleway font-semibold text-gray-800">
-              Unisex Salon  Bridal Makeup & Nail Art Studio
+              Services Offered at Our Unisex Salon in Bhubaneswar
             </h2>
             <p className="fade-up font-lato text-gray-500 leading-relaxed">
-              Experience premium unisex salon services and flawless bridal
-              makeup crafted by professional artists. From elegant hairstyles
-              to radiant makeup looks, we bring beauty to perfection.
-              Our team focuses on understanding your style, preferences,
-              and occasion to deliver results that feel natural, confident,
-              and long-lasting. Using high-quality products and modern
-              techniques, we ensure every service enhances your beauty
-              while providing a relaxing and luxurious salon experience.
+              Skin. Makeup. Hair- all under one roof. Explore our premium makeup and hair care at our
+unisex salon in Bhubaneswar. We care for your style, preferences, and event, ensuring your
+natural beauty is enhanced, which helps boost confidence and overall personality.
+
             </p>
 
             <a
@@ -102,32 +98,30 @@ export default function ServiceSection() {
             <img
               src="/assets/images/hairBrush.png"
               alt="Hair Brush"
-              className="w-full max-w-[280px] h-auto object-contain"
+              className="w-full max-w-[360px] h-auto object-contain"
             />
             <img
               src="/assets/images/comb.png"
               alt="Comb"
-              className="w-full max-w-[280px] h-auto object-contain"
+              className="w-full max-w-[360px] h-auto object-contain"
             />
 
           </div>
 
           <div className="space-y-5">
-            <h2 className="fade-right text-3xl lg:text-4xl font-raleway font-semibold text-gray-800">
-              Beauty, Style & Confidence
-            </h2>
-            <p className="fade-up font-lato text-gray-500 leading-relaxed">
-              Our unisex salon offers personalized grooming, luxury hair care,
-              and professional bridal makeup services designed to make every
-              client feel confident and beautiful. From precision haircuts,
-              advanced coloring, and trend-focused styling to flawless bridal,
-              party, and occasion makeup, our experienced artists work closely
-              with you to create looks that suit your personality and lifestyle.
-              We use premium products, modern techniques, and a relaxed,
-              welcoming environment to ensure every visit is a refreshing and
-              confidence-boosting experience.
-            </p>
+  <h2 className="fade-right text-3xl lg:text-4xl font-raleway font-semibold text-gray-800">
+    Your Style, Our Expertise- Why Our Customers Are Happy With Us
+  </h2>
 
+  <p className="fade-up font-lato text-gray-500 leading-relaxed">
+    We are one of the top-rated salons in Bhubaneswar because we provide our customers with
+    personalized consultation where we understand your styling needs and deliver with
+    precision. Our expert hair and skin care professionals offer advanced hair styling and
+    skin care solutions using only premium, skin-safe, trusted, and branded products for
+    effective results. We maintain a hygienic and safe ambiance with clean tools, treatment
+    areas, and a comfortable environment. As a true unisex salon, we believe that beauty has
+    no gender when it comes to grooming.
+  </p>
             <a
               href="#"
               className="inline-block bg-[#1f1a18] text-white px-6 py-2 mt-4 text-sm uppercase tracking-widest hover:bg-yellow-600 transition-all duration-300"

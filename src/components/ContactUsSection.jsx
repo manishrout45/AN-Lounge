@@ -90,11 +90,24 @@ export default function ContactUsSection() {
                 </div>
 
                 {/* SOCIAL ICONS */}
-                <div className="flex gap-4 pt-4">
-                  <FaFacebookF className="cursor-pointer hover:opacity-60" />
-                  <FaInstagram className="cursor-pointer hover:opacity-60" />
-                  <FaTwitter className="cursor-pointer hover:opacity-60" />
-                </div>
+<div className="flex gap-4 pt-4">
+  <a href="#" target="_blank" rel="noopener noreferrer">
+    <FaFacebookF className="cursor-pointer hover:opacity-60" />
+  </a>
+
+  <a
+    href="https://www.instagram.com/artonfaceby_nil?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <FaInstagram className="cursor-pointer hover:opacity-60" />
+  </a>
+
+  <a href="#" target="_blank" rel="noopener noreferrer">
+    <FaTwitter className="cursor-pointer hover:opacity-60" />
+  </a>
+</div>
+
 
               </div>
 
