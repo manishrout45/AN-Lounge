@@ -1,0 +1,137 @@
+export default function ServiceSection() {
+  const services = [
+    {
+      title: "BRIDAL MAKEUP",
+      img: "https://img.freepik.com/premium-photo/image-makeup-artist-doing-bridal-woman-elegant-makeup_1021867-35657.jpg?ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
+    },
+    {
+      title: "HAIR STYLING",
+      img: "https://img.freepik.com/premium-photo/hairdresser-with-scissors-cuts-woman-s-hair-hairdressing-salon-stylist-client-hairsalon-beauty-business-professional-service_266732-18626.jpg?ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
+    },
+    {
+      title: "FACIAL & SKINCARE",
+      img: "https://img.freepik.com/premium-photo/woman-cosmetologist-making-beauty-procedures_926199-2585419.jpg?ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
+    },
+    {
+      title: "GROOMING FOR MEN",
+      img: "https://img.freepik.com/premium-photo/side-view-young-man-holding-hands_114963-23731.jpg?ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
+    },
+    {
+      title: "HAIR COLORING",
+      img: "https://img.freepik.com/free-photo/blonde-girl-getting-her-hair-done_23-2148108856.jpg?ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
+    },
+    {
+      title: "NAIL ART",
+      img: "https://img.freepik.com/premium-photo/free-photo-closeup-beautiful-nail-art-with-flowers_1121794-143.jpg?ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
+    },
+  ];
+
+  return (
+    <section className="w-full bg-white py-24 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 flex flex-col gap-20">
+
+        {/* TOP CONTENT */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="space-y-5">
+            <h2 className="fade-left text-3xl lg:text-4xl font-raleway font-semibold text-gray-800">
+              Services Offered at Our Unisex Salon in Bhubaneswar
+            </h2>
+            <p className="fade-up font-lato text-gray-500 leading-relaxed">
+              Skin. Makeup. Hair- all under one roof. Explore our premium makeup and hair care at our
+unisex salon in Bhubaneswar. We care for your style, preferences, and event, ensuring your
+natural beauty is enhanced, which helps boost confidence and overall personality.
+
+            </p>
+
+            <a
+              href="#"
+              className="inline-block bg-[#1f1a18] text-white px-6 py-2 mt-4 text-sm uppercase tracking-widest hover:bg-yellow-600 transition-all duration-300"
+            >
+              Explore Services
+            </a>
+          </div>
+
+          <div className="flex justify-center lg:justify-end overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=900&q=80"
+              alt="Bridal Makeup"
+              className="w-full max-w-[420px] rounded-xl object-cover"
+            />
+          </div>
+        </div>
+
+        {/* SERVICES GALLERY */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          {services.map((service, index) => (
+            <div key={index} className="relative group h-[260px] overflow-hidden rounded-xl">
+
+              {/* IMAGE */}
+              <img
+                src={service.img}
+                alt={service.title}
+                className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-700"
+              />
+
+
+              {/* SLIDE UP OVERLAY */}
+              <div
+                className="
+                  absolute inset-0
+                  bg-[#3a2f2b]/60
+                  flex items-end justify-center
+                  translate-y-full
+                  group-hover:translate-y-0
+                  transition-transform duration-500 ease-out
+                "
+              >
+                <h3 className="font-raleway text-white text-xl font-extrabold tracking-wide mb-6 text-center px-2">
+                  {service.title}
+                </h3>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* BOTTOM CONTENT */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="flex flex-col gap-6 lg:ml-10">
+            <img
+              src="/assets/images/hairBrush.png"
+              alt="Hair Brush"
+              className="w-full max-w-[360px] h-auto object-contain"
+            />
+            <img
+              src="/assets/images/comb.png"
+              alt="Comb"
+              className="w-full max-w-[360px] h-auto object-contain"
+            />
+
+          </div>
+
+          <div className="space-y-5">
+  <h2 className="fade-right text-3xl lg:text-4xl font-raleway font-semibold text-gray-800">
+    Your Style, Our Expertise- Why Our Customers Are Happy With Us
+  </h2>
+
+  <p className="fade-up font-lato text-gray-500 leading-relaxed">
+    We are one of the top-rated salons in Bhubaneswar because we provide our customers with
+    personalized consultation where we understand your styling needs and deliver with
+    precision. Our expert hair and skin care professionals offer advanced hair styling and
+    skin care solutions using only premium, skin-safe, trusted, and branded products for
+    effective results. We maintain a hygienic and safe ambiance with clean tools, treatment
+    areas, and a comfortable environment. As a true unisex salon, we believe that beauty has
+    no gender when it comes to grooming.
+  </p>
+            <a
+              href="#"
+              className="inline-block bg-[#1f1a18] text-white px-6 py-2 mt-4 text-sm uppercase tracking-widest hover:bg-yellow-600 transition-all duration-300"
+            >
+              Book Appointment
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  );
+}
